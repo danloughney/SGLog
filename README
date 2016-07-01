@@ -1,1 +1,2 @@
-THIS IS THE README FILE
+I worked with a guy named Tom who gave me this great advice. "The first thing you write should be your logger." Here is my logger for iOS apps. It is ObjectiveC macro based which allows you to embed any amount of log messages you wish into your application and completely compile them out your archive.
+

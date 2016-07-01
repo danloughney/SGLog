@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		413CA9B66226759739C1BEBD /* libPods-SGLogTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6EF419D974AD6E59754B96 /* libPods-SGLogTests.a */; };
 		7A04779D1D26933100240196 /* SGLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A04779C1D26933100240196 /* SGLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7A0477A41D26933200240196 /* SGLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0477991D26933100240196 /* SGLog.framework */; };
 		7A0477A91D26933200240196 /* SGLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0477A81D26933200240196 /* SGLogTests.m */; };
@@ -14,6 +15,7 @@
 		7A0477B71D26E9F400240196 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7A0477B61D26E9F400240196 /* LICENSE */; };
 		7A0477B91D2702E500240196 /* SGLog.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 7A0477B81D2702E500240196 /* SGLog.podspec */; };
 		7A9205571D270EDC003613DB /* README in Resources */ = {isa = PBXBuildFile; fileRef = 7A9205561D270EDC003613DB /* README */; };
+		F12ED058BEA09F612EC89CB0 /* libPods-SGLog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C65D4B850A0C10F92F9F9574 /* libPods-SGLog.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D6EF419D974AD6E59754B96 /* libPods-SGLogTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SGLogTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6052A51194A009DB643D45A0 /* Pods-SGLogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGLogTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGLogTests/Pods-SGLogTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7A0477991D26933100240196 /* SGLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SGLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A04779C1D26933100240196 /* SGLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGLog.h; sourceTree = "<group>"; };
 		7A04779E1D26933100240196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,6 +42,10 @@
 		7A0477B61D26E9F400240196 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7A0477B81D2702E500240196 /* SGLog.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SGLog.podspec; sourceTree = "<group>"; };
 		7A9205561D270EDC003613DB /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		7FED260D39E7739435C0B58A /* Pods-SGLogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGLogTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGLogTests/Pods-SGLogTests.release.xcconfig"; sourceTree = "<group>"; };
+		88EA08933AC5E6F02B25A9C2 /* Pods-SGLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGLog.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGLog/Pods-SGLog.release.xcconfig"; sourceTree = "<group>"; };
+		C65D4B850A0C10F92F9F9574 /* libPods-SGLog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SGLog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1C733BCBD60B2FA5AC206B4 /* Pods-SGLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGLog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGLog/Pods-SGLog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F12ED058BEA09F612EC89CB0 /* libPods-SGLog.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +62,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A0477A41D26933200240196 /* SGLog.framework in Frameworks */,
+				413CA9B66226759739C1BEBD /* libPods-SGLogTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +78,8 @@
 				7A04779B1D26933100240196 /* SGLog */,
 				7A0477A71D26933200240196 /* SGLogTests */,
 				7A04779A1D26933100240196 /* Products */,
+				E60B1FD93803D4B4ED1F3D0C /* Pods */,
+				A24D0E0788E85610BA6E1B7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +112,26 @@
 			path = SGLogTests;
 			sourceTree = "<group>";
 		};
+		A24D0E0788E85610BA6E1B7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C65D4B850A0C10F92F9F9574 /* libPods-SGLog.a */,
+				4D6EF419D974AD6E59754B96 /* libPods-SGLogTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E60B1FD93803D4B4ED1F3D0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1C733BCBD60B2FA5AC206B4 /* Pods-SGLog.debug.xcconfig */,
+				88EA08933AC5E6F02B25A9C2 /* Pods-SGLog.release.xcconfig */,
+				6052A51194A009DB643D45A0 /* Pods-SGLogTests.debug.xcconfig */,
+				7FED260D39E7739435C0B58A /* Pods-SGLogTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -118,10 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A0477AD1D26933200240196 /* Build configuration list for PBXNativeTarget "SGLog" */;
 			buildPhases = (
+				494FFA612BCB190739AAE209 /* [CP] Check Pods Manifest.lock */,
 				7A0477941D26933100240196 /* Sources */,
 				7A0477951D26933100240196 /* Frameworks */,
 				7A0477961D26933100240196 /* Headers */,
 				7A0477971D26933100240196 /* Resources */,
+				14BF05B64F0AB7A67BC99680 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,9 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A0477B01D26933200240196 /* Build configuration list for PBXNativeTarget "SGLogTests" */;
 			buildPhases = (
+				5CDB70F17BECD0F5D0B73D32 /* [CP] Check Pods Manifest.lock */,
 				7A04779F1D26933200240196 /* Sources */,
 				7A0477A01D26933200240196 /* Frameworks */,
 				7A0477A11D26933200240196 /* Resources */,
+				F4A03B40E98D0EB5739F45D1 /* [CP] Embed Pods Frameworks */,
+				25F5E31DA8689A7AEB352A1F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,6 +242,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14BF05B64F0AB7A67BC99680 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGLog/Pods-SGLog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25F5E31DA8689A7AEB352A1F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGLogTests/Pods-SGLogTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		494FFA612BCB190739AAE209 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5CDB70F17BECD0F5D0B73D32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4A03B40E98D0EB5739F45D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGLogTests/Pods-SGLogTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7A0477941D26933100240196 /* Sources */ = {
@@ -326,6 +441,7 @@
 		};
 		7A0477AE1D26933200240196 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1C733BCBD60B2FA5AC206B4 /* Pods-SGLog.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
@@ -343,6 +459,7 @@
 		};
 		7A0477AF1D26933200240196 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88EA08933AC5E6F02B25A9C2 /* Pods-SGLog.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
@@ -360,6 +477,7 @@
 		};
 		7A0477B11D26933200240196 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6052A51194A009DB643D45A0 /* Pods-SGLogTests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SGLogTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -370,6 +488,7 @@
 		};
 		7A0477B21D26933200240196 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FED260D39E7739435C0B58A /* Pods-SGLogTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SGLogTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
