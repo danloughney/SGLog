@@ -12,6 +12,7 @@
 		7A0477A91D26933200240196 /* SGLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0477A81D26933200240196 /* SGLogTests.m */; };
 		7A0477B51D26976D00240196 /* SGLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0477B41D26976D00240196 /* SGLogger.m */; };
 		7A0477B71D26E9F400240196 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7A0477B61D26E9F400240196 /* LICENSE */; };
+		7A0477B91D2702E500240196 /* SGLog.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 7A0477B81D2702E500240196 /* SGLog.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		7A0477B31D26959E00240196 /* PublicHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicHeader.h; sourceTree = "<group>"; };
 		7A0477B41D26976D00240196 /* SGLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGLogger.m; sourceTree = "<group>"; };
 		7A0477B61D26E9F400240196 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		7A0477B81D2702E500240196 /* SGLog.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SGLog.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		7A04778F1D26933100240196 = {
 			isa = PBXGroup;
 			children = (
+				7A0477B81D2702E500240196 /* SGLog.podspec */,
 				7A0477B61D26E9F400240196 /* LICENSE */,
 				7A04779B1D26933100240196 /* SGLog */,
 				7A0477A71D26933200240196 /* SGLogTests */,
@@ -186,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A0477B71D26E9F400240196 /* LICENSE in Resources */,
+				7A0477B91D2702E500240196 /* SGLog.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
