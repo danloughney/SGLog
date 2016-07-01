@@ -10,6 +10,8 @@
 		7A04779D1D26933100240196 /* SGLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A04779C1D26933100240196 /* SGLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7A0477A41D26933200240196 /* SGLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0477991D26933100240196 /* SGLog.framework */; };
 		7A0477A91D26933200240196 /* SGLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0477A81D26933200240196 /* SGLogTests.m */; };
+		7A0477B51D26976D00240196 /* SGLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0477B41D26976D00240196 /* SGLogger.m */; };
+		7A0477B71D26E9F400240196 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7A0477B61D26E9F400240196 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,9 @@
 		7A0477A31D26933200240196 /* SGLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SGLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A0477A81D26933200240196 /* SGLogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGLogTests.m; sourceTree = "<group>"; };
 		7A0477AA1D26933200240196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A0477B31D26959E00240196 /* PublicHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicHeader.h; sourceTree = "<group>"; };
+		7A0477B41D26976D00240196 /* SGLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGLogger.m; sourceTree = "<group>"; };
+		7A0477B61D26E9F400240196 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +58,7 @@
 		7A04778F1D26933100240196 = {
 			isa = PBXGroup;
 			children = (
+				7A0477B61D26E9F400240196 /* LICENSE */,
 				7A04779B1D26933100240196 /* SGLog */,
 				7A0477A71D26933200240196 /* SGLogTests */,
 				7A04779A1D26933100240196 /* Products */,
@@ -72,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				7A04779C1D26933100240196 /* SGLog.h */,
+				7A0477B31D26959E00240196 /* PublicHeader.h */,
+				7A0477B41D26976D00240196 /* SGLogger.m */,
 				7A04779E1D26933100240196 /* Info.plist */,
 			);
 			path = SGLog;
@@ -147,6 +155,7 @@
 				TargetAttributes = {
 					7A0477981D26933100240196 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = PNH2S5TDPG;
 					};
 					7A0477A21D26933200240196 = {
 						CreatedOnToolsVersion = 7.3;
@@ -176,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A0477B71D26E9F400240196 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A0477B51D26976D00240196 /* SGLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +264,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -295,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -308,6 +319,7 @@
 		7A0477AE1D26933200240196 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -315,7 +327,7 @@
 				INFOPLIST_FILE = SGLog/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = spookygroup.com.SGLog;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spookygroup.SGLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -324,6 +336,7 @@
 		7A0477AF1D26933200240196 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -331,7 +344,7 @@
 				INFOPLIST_FILE = SGLog/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = spookygroup.com.SGLog;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spookygroup.SGLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -376,6 +389,7 @@
 				7A0477AF1D26933200240196 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A0477B01D26933200240196 /* Build configuration list for PBXNativeTarget "SGLogTests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +398,7 @@
 				7A0477B21D26933200240196 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

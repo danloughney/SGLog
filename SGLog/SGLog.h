@@ -2,8 +2,8 @@
 //  SGLog.h
 //  SGLog
 //
-//  Created by Daniel Loughney on 7/1/16.
-//  Copyright © 2016 SpookyGroup. All rights reserved.
+//  Created by Daniel Loughney on 8/24/11.
+//  Copyright (c) 2011-2016 Spooky Group LLC. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -15,5 +15,7 @@ FOUNDATION_EXPORT double SGLogVersionNumber;
 FOUNDATION_EXPORT const unsigned char SGLogVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SGLog/PublicHeader.h>
+
+#import <SGLog/PublicHeader.h>
 
 
