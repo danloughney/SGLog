@@ -17,12 +17,12 @@ Pod::Spec.new do |s|
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target    = "9.0"
   s.source                      = { :git => "https://github.com/danloughney/SGLog.git", :tag => "0.0.2" }
-  s.source_files                = "Classes", "SGLog/SGLog/*.{h,m}"
-#s.exclude_files               = "Classes/Exclude"
-  s.public_header_files         = "SGLog/SGLog/*.h"
+  s.source_files                = "Classes", "SGLog/*.{h,m}"
+  s.public_header_files         = "SGLog/*.h"
   s.framework                   = "UIKit"
   s.requires_arc                = true
 
+  #s.exclude_files               = "Classes/Exclude"
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
