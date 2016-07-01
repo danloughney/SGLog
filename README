@@ -1,2 +1,3 @@
-I worked with a guy named Tom who gave me this great advice. "The first thing you write should be your logger." Here is my logger for iOS apps. It is ObjectiveC macro based which allows you to embed any amount of log messages you wish into your application and completely compile them out your archive.
+I worked with a guy named Tom who gave me this great advice. "The first thing you write should be your logger." Here is my logger for iOS apps. It is ObjectiveC macro based wrapper for NSLog.
 
+You can categorize your log messages and write them out conditionally. Finally when you are ready to ship, all of your logging messages are compiled out of your archive protecting your proprietary info and preventing your app from spamming the iOS console.

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		413CA9B66226759739C1BEBD /* libPods-SGLogTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6EF419D974AD6E59754B96 /* libPods-SGLogTests.a */; };
+		3A624DE454BDBC001735D40E /* Pods_SGLogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7478A6E4F515A60D723AABDC /* Pods_SGLogTests.framework */; };
 		7A04779D1D26933100240196 /* SGLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A04779C1D26933100240196 /* SGLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7A0477A41D26933200240196 /* SGLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0477991D26933100240196 /* SGLog.framework */; };
 		7A0477A91D26933200240196 /* SGLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0477A81D26933200240196 /* SGLogTests.m */; };
@@ -15,7 +15,7 @@
 		7A0477B71D26E9F400240196 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7A0477B61D26E9F400240196 /* LICENSE */; };
 		7A0477B91D2702E500240196 /* SGLog.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 7A0477B81D2702E500240196 /* SGLog.podspec */; };
 		7A9205571D270EDC003613DB /* README in Resources */ = {isa = PBXBuildFile; fileRef = 7A9205561D270EDC003613DB /* README */; };
-		F12ED058BEA09F612EC89CB0 /* libPods-SGLog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C65D4B850A0C10F92F9F9574 /* libPods-SGLog.a */; };
+		AA6A95DB5F999AB0D226A918 /* Pods_SGLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D94D388BED877546EBFB71 /* Pods_SGLog.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,8 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4D6EF419D974AD6E59754B96 /* libPods-SGLogTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SGLogTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6052A51194A009DB643D45A0 /* Pods-SGLogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGLogTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGLogTests/Pods-SGLogTests.debug.xcconfig"; sourceTree = "<group>"; };
+		66D94D388BED877546EBFB71 /* Pods_SGLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7478A6E4F515A60D723AABDC /* Pods_SGLogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGLogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A0477991D26933100240196 /* SGLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SGLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A04779C1D26933100240196 /* SGLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGLog.h; sourceTree = "<group>"; };
 		7A04779E1D26933100240196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,7 +45,6 @@
 		7A9205561D270EDC003613DB /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		7FED260D39E7739435C0B58A /* Pods-SGLogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGLogTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGLogTests/Pods-SGLogTests.release.xcconfig"; sourceTree = "<group>"; };
 		88EA08933AC5E6F02B25A9C2 /* Pods-SGLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGLog.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGLog/Pods-SGLog.release.xcconfig"; sourceTree = "<group>"; };
-		C65D4B850A0C10F92F9F9574 /* libPods-SGLog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SGLog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C733BCBD60B2FA5AC206B4 /* Pods-SGLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGLog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGLog/Pods-SGLog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F12ED058BEA09F612EC89CB0 /* libPods-SGLog.a in Frameworks */,
+				AA6A95DB5F999AB0D226A918 /* Pods_SGLog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A0477A41D26933200240196 /* SGLog.framework in Frameworks */,
-				413CA9B66226759739C1BEBD /* libPods-SGLogTests.a in Frameworks */,
+				3A624DE454BDBC001735D40E /* Pods_SGLogTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,8 +115,8 @@
 		A24D0E0788E85610BA6E1B7D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C65D4B850A0C10F92F9F9574 /* libPods-SGLog.a */,
-				4D6EF419D974AD6E59754B96 /* libPods-SGLogTests.a */,
+				66D94D388BED877546EBFB71 /* Pods_SGLog.framework */,
+				7478A6E4F515A60D723AABDC /* Pods_SGLogTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -451,7 +451,7 @@
 				INFOPLIST_FILE = SGLog/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.spookygroup.SGLog;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spookygroup.sglog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -469,7 +469,7 @@
 				INFOPLIST_FILE = SGLog/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.spookygroup.SGLog;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spookygroup.sglog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
