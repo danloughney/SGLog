@@ -13,6 +13,7 @@
 		7A0477B51D26976D00240196 /* SGLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0477B41D26976D00240196 /* SGLogger.m */; };
 		7A0477B71D26E9F400240196 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7A0477B61D26E9F400240196 /* LICENSE */; };
 		7A0477B91D2702E500240196 /* SGLog.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 7A0477B81D2702E500240196 /* SGLog.podspec */; };
+		7A9205571D270EDC003613DB /* README in Resources */ = {isa = PBXBuildFile; fileRef = 7A9205561D270EDC003613DB /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		7A0477B41D26976D00240196 /* SGLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGLogger.m; sourceTree = "<group>"; };
 		7A0477B61D26E9F400240196 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7A0477B81D2702E500240196 /* SGLog.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SGLog.podspec; sourceTree = "<group>"; };
+		7A9205561D270EDC003613DB /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				7A0477B81D2702E500240196 /* SGLog.podspec */,
 				7A0477B61D26E9F400240196 /* LICENSE */,
+				7A9205561D270EDC003613DB /* README */,
 				7A04779B1D26933100240196 /* SGLog */,
 				7A0477A71D26933200240196 /* SGLogTests */,
 				7A04779A1D26933100240196 /* Products */,
@@ -188,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A9205571D270EDC003613DB /* README in Resources */,
 				7A0477B71D26E9F400240196 /* LICENSE in Resources */,
 				7A0477B91D2702E500240196 /* SGLog.podspec in Resources */,
 			);
