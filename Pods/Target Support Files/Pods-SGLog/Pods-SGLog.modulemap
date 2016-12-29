@@ -1,0 +1,6 @@
+framework module Pods_SGLog {
+  umbrella header "Pods-SGLog-umbrella.h"
+
+  export *
+  module * { export * }
+}
