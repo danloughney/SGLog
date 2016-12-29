@@ -1,9 +1,9 @@
 platform :ios, '8.0'
 
-target 'SGLog' do
+use_frameworks!
 
+target 'SGLog' do
 end
 
 target 'SGLogTests' do
-
 end
