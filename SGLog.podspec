@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                        = "SGLog"
-  s.version                     = "0.0.6"
+  s.version                     = "0.0.8"
   s.summary                     = "ObjectiveC logging macros"
   s.description                 = <<-DESC
         SGLog is a macro based logger which allows you to embed significant logging code in your
@@ -14,9 +14,8 @@ Pod::Spec.new do |s|
   s.social_media_url            = "http://twitter.com/dcloughney"
   s.platform                    = :ios
   s.ios.deployment_target       = "8.0"
-  s.source                      = { :git => "https://github.com/danloughney/SGLog.git", :tag => "0.0.6" }
+  s.source                      = { :git => "https://github.com/danloughney/SGLog.git", :tag => "0.0.7" }
   s.source_files                = "Classes", "SGLog/*.{h,m}"
   s.public_header_files         = "SGLog/*.h"
-#  s.framework                   = "UIKit"
   s.requires_arc                = true
 end

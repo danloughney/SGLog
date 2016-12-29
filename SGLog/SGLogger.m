@@ -63,7 +63,7 @@ static SGLogger *theLogger = nil;
             logDescription = @"Unknown";
             break;
     }
-    return [[NSString alloc]initWithFormat:@"<WeDebug 0x%08x logLevel(%@) category(0x%08lx)", (int)self, logDescription, (unsigned long)_category];
+    return [[NSString alloc]initWithFormat:@"<SGLogger 0x%08x logLevel(%@) category(0x%08lx)", (int)self, logDescription, (unsigned long)_category];
 }
 
 + (void) incrementLevel {
@@ -145,7 +145,7 @@ void makeVisibleViews(NSArray *array) {
     
     _currentIndex++;
     if (_currentIndex == [_views count]) {
-        SGWARN1(@"%s REACHED END OF VIEW HIERARCHY at view #%ld.  Starting over at 0.", (long)_currentIndex);
+        SGWARN1(@"REACHED END OF VIEW HIERARCHY at view #%ld.  Starting over at 0.", (long)_currentIndex);
         _currentIndex = 0;
     }
     _currentView = _views[_currentIndex];

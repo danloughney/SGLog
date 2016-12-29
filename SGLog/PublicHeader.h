@@ -32,7 +32,7 @@
 #endif 
 
 #ifndef DEV_TIMER
-#define DEV_TIMER (1)
+#define DEV_TIMER (0)
 #endif
 
 #endif
@@ -70,7 +70,7 @@
 #define MAX_LOGGING LOGGING_DETAILED
 #define MIN_LOGGING LOGGING_OFF
 
-#define WEDEBUG_MAX_DATA_LEN    (128)
+#define SGLogger_MAX_DATA_LEN    (128)
 
 @interface SGLogger : NSObject
 @property (readwrite, assign) NSUInteger logLevel;
@@ -135,44 +135,44 @@ CG_INLINE void viewHeirarchy(UIView*theView, const char*functionName, const char
 
 // define DEVELOPMENT to get the SG_LOG... macros to resolve to code.  Change this to DEVELOPMENT_DONE when ready for release to production
 #if DEV_LOG == 1
-#define __SGLOG_MESSAGE(format, func) [NSString stringWithFormat:@"%s %@", func, arg]
+#define __SGLOG_MESSAGE(format, func) [NSString stringWithFormat:@"%s %@", func, format]
 #define SGLOG_DECLARE(arg) arg
-#define SGLOGFN NSDate*__dt__ __unused = [NSDate date];{ if ([WeDebug detailedLogging] && [WeDebug categoryBasedLogging:SGLOG_LOGFN]) NSLog(@"%s >>%@", __PRETTY_FUNCTION__, DEVTIMESTAMP); }
-#define SGLOGFN1(arg1) NSDate*__dt__ __unused = [NSDate date];{ if ([WeDebug detailedLogging] && [WeDebug categoryBasedLogging:SGLOG_LOGFN]) NSLog(@"%s >> arg(%@)%@", __PRETTY_FUNCTION__, arg1, DEVTIMESTAMP); }
+#define SGLOGFN NSDate*__dt__ __unused = [NSDate date];{ if ([SGLogger detailedLogging] && [SGLogger categoryBasedLogging:SGLOG_LOGFN]) NSLog(@"%s >>%@", __PRETTY_FUNCTION__, DEVTIMESTAMP); }
+#define SGLOGFN1(arg1) NSDate*__dt__ __unused = [NSDate date];{ if ([SGLogger detailedLogging] && [SGLogger categoryBasedLogging:SGLOG_LOGFN]) NSLog(@"%s >> arg(%@)%@", __PRETTY_FUNCTION__, arg1, DEVTIMESTAMP); }
 
-#define SGLOGFEND { if ([WeDebug basicLogging] && [WeDebug categoryBasedLogging:SGLOG_LOGFN]) NSLog(@"%s << --- %g ---", __PRETTY_FUNCTION__, [[NSDate date] timeIntervalSinceDate:__dt__]); }
+#define SGLOGFEND { if ([SGLogger basicLogging] && [SGLogger categoryBasedLogging:SGLOG_LOGFN]) NSLog(@"%s << --- %g ---", __PRETTY_FUNCTION__, [[NSDate date] timeIntervalSinceDate:__dt__]); }
 
-#define SGLOG(format) { if ([WeDebug basicLogging]) NSLog(__SGLOG_MESSAGE(format, __PRETTY_FUNCTION__)); }
+#define SGLOG(format) { if ([SGLogger basicLogging]) NSLog(__SGLOG_MESSAGE(format, __PRETTY_FUNCTION__)); }
 
-#define SGLOG1(format, arg1) { if ([WeDebug basicLogging]) NSLog(__SGLOG_MESSAGE(format, __PRETTY_FUNCTION__), arg1); }
+#define SGLOG1(format, arg1) { if ([SGLogger basicLogging]) NSLog(__SGLOG_MESSAGE(format, __PRETTY_FUNCTION__), arg1); }
 
-#define SGLOG2(format, arg1, arg2) { if ([WeDebug basicLogging]) NSLog(__SGLOG_MESSAGE(format, __PRETTY_FUNCTION__), arg1, arg2); }
+#define SGLOG2(format, arg1, arg2) { if ([SGLogger basicLogging]) NSLog(__SGLOG_MESSAGE(format, __PRETTY_FUNCTION__), arg1, arg2); }
 
-#define SGLOG3(format, arg1, arg2, arg3) { if ([WeDebug basicLogging]) NSLog(__SGLOG_MESSAGE(format, __PRETTY_FUNCTION__), arg1, arg2, arg3); }
+#define SGLOG3(format, arg1, arg2, arg3) { if ([SGLogger basicLogging]) NSLog(__SGLOG_MESSAGE(format, __PRETTY_FUNCTION__), arg1, arg2, arg3); }
 
-#define SGLOG4(format, arg1, arg2, arg3, arg4) { if ([WeDebug basicLogging]) NSLog(__SGLOG_MESSAGE(format, __PRETTY_FUNCTION__), arg1, arg2, arg3, arg4); }
+#define SGLOG4(format, arg1, arg2, arg3, arg4) { if ([SGLogger basicLogging]) NSLog(__SGLOG_MESSAGE(format, __PRETTY_FUNCTION__), arg1, arg2, arg3, arg4); }
 
-#define SGLOG5(format, arg1, arg2, arg3, arg4, arg5) { if ([WeDebug basicLogging]) NSLog(__SGLOG_MESSAGE(format, __PRETTY_FUNCTION__), arg1, arg2, arg3, arg4, arg5); }
+#define SGLOG5(format, arg1, arg2, arg3, arg4, arg5) { if ([SGLogger basicLogging]) NSLog(__SGLOG_MESSAGE(format, __PRETTY_FUNCTION__), arg1, arg2, arg3, arg4, arg5); }
 
-#define SGLOG6(format, arg1, arg2, arg3, arg4, arg5) { if ([WeDebug basicLogging]) NSLog(__SGLOG_MESSAGE(format, __PRETTY_FUNCTION__), arg1, arg2, arg3, arg4, arg5, arg6); }
+#define SGLOG6(format, arg1, arg2, arg3, arg4, arg5) { if ([SGLogger basicLogging]) NSLog(__SGLOG_MESSAGE(format, __PRETTY_FUNCTION__), arg1, arg2, arg3, arg4, arg5, arg6); }
 
-#define SGLOGCATFN(category) NSDate*__dt__ __unused = [NSDate date];{ if ([WeDebug categoryBasedLogging:category] && [WeDebug basicLogging]) NSLog(@"%s >>%@", __PRETTY_FUNCTION__, DEVTIMESTAMP); }
+#define SGLOGCATFN(category) NSDate*__dt__ __unused = [NSDate date];{ if ([SGLogger categoryBasedLogging:category] && [SGLogger basicLogging]) NSLog(@"%s >>%@", __PRETTY_FUNCTION__, DEVTIMESTAMP); }
 
-#define SGLOGCATFN1(category, arg1) NSDate*__dt__ __unused = [NSDate date];{ if ([WeDebug categoryBasedLogging:category] && [WeDebug basicLogging]) NSLog(@"%s >> arg(%@)%@", __PRETTY_FUNCTION__, arg1, DEVTIMESTAMP); }
+#define SGLOGCATFN1(category, arg1) NSDate*__dt__ __unused = [NSDate date];{ if ([SGLogger categoryBasedLogging:category] && [SGLogger basicLogging]) NSLog(@"%s >> arg(%@)%@", __PRETTY_FUNCTION__, arg1, DEVTIMESTAMP); }
 
-#define SGLOGCATFEND(category) { if ([WeDebug categoryBasedLogging:category] && [WeDebug basicLogging]) NSLog(@"%s << --- %g ---", __PRETTY_FUNCTION__, [[NSDate date] timeIntervalSinceDate:__dt__]); }
+#define SGLOGCATFEND(category) { if ([SGLogger categoryBasedLogging:category] && [SGLogger basicLogging]) NSLog(@"%s << --- %g ---", __PRETTY_FUNCTION__, [[NSDate date] timeIntervalSinceDate:__dt__]); }
 
-#define SGLOGCAT(category, format) { if ([WeDebug categoryBasedLogging:category]) NSLog(format, __PRETTY_FUNCTION__); }
+#define SGLOGCAT(category, format) { if ([SGLogger categoryBasedLogging:category]) NSLog(__SGLOG_MESSAGE(format, __PRETTY_FUNCTION__)); }
 
-#define SGLOGCAT1(category, format, arg1) { if ([WeDebug categoryBasedLogging:category]) NSLog(format, __PRETTY_FUNCTION__, arg1); }
+#define SGLOGCAT1(category, format, arg1) { if ([SGLogger categoryBasedLogging:category]) NSLog(__SGLOG_MESSAGE(format, __PRETTY_FUNCTION__), arg1); }
 
-#define SGLOGCAT2(category, format, arg1, arg2) { if ([WeDebug categoryBasedLogging:category]) NSLog(format, __PRETTY_FUNCTION__, arg1, arg2); }
+#define SGLOGCAT2(category, format, arg1, arg2) { if ([SGLogger categoryBasedLogging:category]) NSLog(__SGLOG_MESSAGE(format, __PRETTY_FUNCTION__), arg1, arg2); }
 
-#define SGLOGCAT3(category, format, arg1, arg2, arg3) { if ([WeDebug categoryBasedLogging:category]) NSLog(format, __PRETTY_FUNCTION__, arg1, arg2, arg3); }
+#define SGLOGCAT3(category, format, arg1, arg2, arg3) { if ([SGLogger categoryBasedLogging:category]) NSLog(__SGLOG_MESSAGE(format, __PRETTY_FUNCTION__), arg1, arg2, arg3); }
 
-#define SGLOGCAT4(category, format, arg1, arg2, arg3, arg4) { if ([WeDebug categoryBasedLogging:category]) NSLog(format, __PRETTY_FUNCTION__, arg1, arg2, arg3, arg4); }
+#define SGLOGCAT4(category, format, arg1, arg2, arg3, arg4) { if ([SGLogger categoryBasedLogging:category]) NSLog(__SGLOG_MESSAGE(format, __PRETTY_FUNCTION__), arg1, arg2, arg3, arg4); }
 
-#define SGLOGCAT5(category, format, arg1, arg2, arg3, arg4, arg5) { if ([WeDebug categoryBasedLogging:category]) NSLog(format, __PRETTY_FUNCTION__, arg1, arg2, arg3, arg4, arg5); }
+#define SGLOGCAT5(category, format, arg1, arg2, arg3, arg4, arg5) { if ([SGLogger categoryBasedLogging:category]) NSLog(__SGLOG_MESSAGE(format, __PRETTY_FUNCTION__), arg1, arg2, arg3, arg4, arg5); }
 
 #define SGLOGVIEWH(aView) viewHeirarchy(aView, __PRETTY_FUNCTION__, "");NSLog(@"\n")
 #else
@@ -201,9 +201,9 @@ CG_INLINE void viewHeirarchy(UIView*theView, const char*functionName, const char
 #endif
 
 #ifdef DEVWARN
-//#define SGWARNFN NSDate*__dt__ = [NSDate date];{ if ([WeDebug detailedLogging]) NSLog(@"%s >> dt(%@)", __PRETTY_FUNCTION__, __dt__); }
+//#define SGWARNFN NSDate*__dt__ = [NSDate date];{ if ([SGLogger detailedLogging]) NSLog(@"%s >> dt(%@)", __PRETTY_FUNCTION__, __dt__); }
 //#define SGWARNFN1(arg1) NSDate*__dt__ = [NSDate date];{ NSLog(@"%s >> arg(%@) dt(%@)", __PRETTY_FUNCTION__, arg1, __dt__); }
-#define SGWARNFN { if ([WeDebug detailedLogging]) NSLog(@"%s >>", __PRETTY_FUNCTION__); }
+#define SGWARNFN { if ([SGLogger detailedLogging]) NSLog(@"%s >>", __PRETTY_FUNCTION__); }
 #define SGWARNFN1(arg1) { NSLog(@"%s >> arg(%@)", __PRETTY_FUNCTION__, arg1); }
 #define SGWARNFN2(arg1, arg2) { NSLog(@"%s >> arg(%@) arg2(%@)", __PRETTY_FUNCTION__, arg1, arg2); }
 
